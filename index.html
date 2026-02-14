@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Card</title>
+
+<!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card {
+    background: #fff;
+    width: 320px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #34de64;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.designation {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 14px;
+    color:chocolate;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    background: #667eea;
+    margin: 0 8px;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #764ba2;
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        padding: 25px 15px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <img src="https://media-del2-1.cdn.whatsapp.net/v/t61.24694-24/534419403_854601860330649_7701996824036552919_n.jpg?ccb=11-4&oh=01_Q5Aa3wHjwT2SZPwoN2x3Jx-sQyIx9hJNX-xw9OMen45wg4TJSw&oe=699CFDAD&_nc_sid=5e03e0&_nc_cat=108" alt="Profile Image" class="profile-img">
+    <h2>Yash Sharma</h2>
+    <p class="designation">Frontend Developer</p>
+    <p class="bio">
+        Passionate about building responsive and interactive web experiences.
+        Love clean UI design and modern web technologies.
+    </p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+</div>
+
+</body>
+</html>
